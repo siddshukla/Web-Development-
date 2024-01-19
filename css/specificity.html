@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade</title>
+    <style>
+        .yellow{
+            color: blue;
+        }
+        
+        .purple{
+            color: blueviolet;
+        }
+        .red{
+            color: red;
+        }
+        <!--attribute_selectors-->
+        [sidd="2"]{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p class=" yellow  purple red" sidd="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illo, aliquam harum consequuntur repellat vel dignissimos voluptas ea tenetur, sequi nihil porro aliquid quidem quaerat magnam obcaecati. Ea, veritatis at.</p>
+</body>
+</html>
