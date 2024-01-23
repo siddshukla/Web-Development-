@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+    <style>
+        /* box:first-child{
+            background-color: yellowgreen;
+        }
+        .boxes *{
+            color: blueviolet;
+        }
+        [data-color="hello"]{
+            color: red;
+        } */
+        .box:nth-child(odd){
+            color: rgb(7, 108, 108);
+        }
+        .boxes::before{
+            content: "hello guy!";
+        }
+        .boxes::after{
+            content: "i am the last line!";
+        }
+        ::selection{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-colo="hello">i am a box 1</div>
+        <div class="box">i am a box 2</div>
+        <div class="box">i am a box 3</div>
+    </div>
+</body>
+</html>

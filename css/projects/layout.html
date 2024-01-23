@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout </title>
+    <style>
+        :root{
+            --primary-color:rgb(153, 58, 242);
+            --secondary-color:rgb(185, 125, 240);
+            --thired-color:rgb(157, 113, 199);
+
+
+        }
+        *{
+            padding: 0px;
+            margin:0px;
+        }
+        body{
+            background-color:var(--secondary-color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 9px 39px ;
+            font-weight: bolder;
+            color: white;
+        }
+        nav{
+            background-color:var(--primary-color);
+            height: 39px;
+            width: 160vw;
+            box-shadow: 3px 9px 17px blueviolet;
+            position: sticky;
+            top: 0px;
+            
+        }
+        .box1{
+            border: 3px transparent;
+            margin: 57px;
+            display: inline;
+            padding: 230px;
+            background-color: var(--thired-color);
+            
+        }
+        .boxes{
+            margin: 330px 3px;
+            display: flexbox;
+            
+        }
+        .box2{
+            border: 3px transparent;
+            margin: 57px;
+            display: inline;
+            padding: 230px;
+            background-color: var(--thired-color);
+        }
+        .wel
+        {
+            border: 3px solid saddlebrown;
+            border-radius: 33px;
+            padding: 90px;
+            margin: 300px;
+            width: 360px;
+            font-size: xx-large;
+        }
+        .footer{
+            background-color: white;
+            padding: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <div class="boxes">
+        <div class="box1 box">
+
+        </div>
+        <div class="box2 box">
+
+        </div>
+    </div>
+    <div class="wel">
+        HELLO GUYS!, HOW ARE YOU ALL?
+    </div>
+    <footer>
+        <div class="footer">
+            Footer
+        </div>
+    </footer>
+</body>
+</html>

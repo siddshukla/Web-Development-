@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            display: flex;
+            height: 90vh;
+            /* justify-content:center; */
+            align-items:center;
+            /* flex-direction:column; */
+            /* flex-wrap: wrap;
+            align-content: flex-start;
+            flex-flow:row wrap; */
+            column-gap:3px;
+            row-gap: 0px;
+            gap: 13px 13px;
+
+        }
+        .order-1{
+            order: 1;
+        }
+        /* .item1{
+            flex-grow: 4;
+        } */
+        .item1{
+            flex-shrink: 2;
+        }
+        .item{
+            /* flex-grow: 1; */
+            height: 33px;
+            width: 33px;
+            background-color: red;
+            border: 3px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--display: flex;
+        justify-content: center;
+            align-items: center;
+        flex-direction: row-reverse;-->
+    <div class="container">
+        <div class="item order-1 ">hello</div>
+        <div class="item item1">hello</div>
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+       
+        
+    
+
+
+    </div>
+</body>
+</html>

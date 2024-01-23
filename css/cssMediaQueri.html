@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+        }
+        @media screen and (orientation:landscape){
+            body{
+                background-color: palevioletred;
+            }
+        }
+        @media only screen and (max-width:600px){
+            body{
+                background-color: aquamarine;
+            }
+            .boxes
+            {
+                flex-direction: column;
+            }
+            
+        }
+        
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: azure;
+            border: 3px;
+            padding: 3px;
+            margin:3px;
+
+        }
+        .boxes{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body class="boxes">
+    <div>
+        <!--hey everyone,how are you all!-->
+    </div>
+    <div class="boxes">
+        <div class="box "></div>
+        <div class="box "></div>
+        <div class="box "></div>
+    </div>
+</body>
+</html>
